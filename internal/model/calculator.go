@@ -14,7 +14,7 @@ func NewCalculator(numOne, numTwo int) *Calculator {
 func (c *Calculator) Subtract() int {
 	return c.NumberOne - c.NumberTwo
 }
-func (c *Calculator) Addition() int {
+func (c *Calculator) Add() int {
 	return c.NumberOne + c.NumberTwo
 }
 
