@@ -2,6 +2,7 @@ package model
 
 import (
 	"fmt"
+	"math"
 )
 
 type Calculator struct {
@@ -34,6 +35,12 @@ func (c *Calculator) Divide() float64 {
 
 func (c *Calculator) Multiply() int {
 	return c.firstNumber + c.secondNumber
+}
+
+func (c *Calculator) Power() float64 {
+	firstNum := float64(c.firstNumber)
+	secondNum := float64(c.firstNumber)
+	return math.Pow(firstNum, secondNum)
 }
 
 func (c *Calculator) PrintInfo() {

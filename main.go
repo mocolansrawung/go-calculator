@@ -12,6 +12,7 @@ func main() {
   	fmt.Println(calc.Add())
 	fmt.Println(calc.Divide())
 	fmt.Println(calc.Multiply())
+	fmt.Println(calc.Power())
 
 	calc.PrintInfo()
 }
