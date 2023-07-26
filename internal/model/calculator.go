@@ -1,10 +1,10 @@
 package model
 
 type Calculator struct {
-	numberOne int
-	numberTwo int
+	NumberOne int
+	NumberTwo int
 }
 
 func (c *Calculator) Subtract() int {
-	return c.numberOne - c.numberTwo
+	return c.NumberOne - c.NumberTwo
 }
