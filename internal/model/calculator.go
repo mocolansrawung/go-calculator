@@ -21,7 +21,7 @@ func (c *Calculator) Add() int {
 	return c.firstNumber + c.secondNumber
 }
 func (c *Calculator) Divide() float64 {
-	result := float64(c.NumberOne) / float64(c.NumberTwo)
+	result := float64(c.firstNumber) / float64(c.secondNumber)
 	formattedResult := fmt.Sprintf("%.2f", result)
 
 	var roundedResult float64
