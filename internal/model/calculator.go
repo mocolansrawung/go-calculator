@@ -18,6 +18,10 @@ func (c *Calculator) Addition() int {
 	return c.NumberOne + c.NumberTwo
 }
 
+func (c *Calculator) Multiplication() int {
+	return c.NumberOne + c.NumberTwo
+}
+
 func (c *Calculator) PrintInfo() {
 	fmt.Printf("number one: %v\n", c.NumberOne)
 	fmt.Printf("number two: %v\n", c.NumberTwo)
