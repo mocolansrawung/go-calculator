@@ -18,7 +18,7 @@ func (c *Calculator) Addition() int {
 	return c.NumberOne + c.NumberTwo
 }
 
-func (c *Calculator) Multiple() int {
+func (c *Calculator) Multiply() int {
 	return c.NumberOne + c.NumberTwo
 }
 
