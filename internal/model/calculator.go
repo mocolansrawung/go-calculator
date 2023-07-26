@@ -5,19 +5,19 @@ import (
 )
 
 type Calculator struct {
-	NumberOne int
-	NumberTwo int
+	firstNumber  int
+	secondNumber int
 }
 
-func NewCalculator(numOne, numTwo int) *Calculator {
-	return &Calculator{NumberOne: numOne, NumberTwo: numTwo}
+func NewCalculator(firstNum, secondNum int) *Calculator {
+	return &Calculator{firstNumber: firstNum, secondNumber: secondNum}
 }
 
 func (c *Calculator) Subtract() int {
-	return c.NumberOne - c.NumberTwo
+	return c.firstNumber - c.secondNumber
 }
 func (c *Calculator) Addition() int {
-	return c.NumberOne + c.NumberTwo
+	return c.firstNumber + c.secondNumber
 }
 
 func (c *Calculator) Divide() float64 {
@@ -34,10 +34,10 @@ func (c *Calculator) Divide() float64 {
 
 
 func (c *Calculator) Multiply() int {
-	return c.NumberOne + c.NumberTwo
+	return c.firstNumber + c.secondNumber
 }
 
 func (c *Calculator) PrintInfo() {
-	fmt.Printf("number one: %v\n", c.NumberOne)
-	fmt.Printf("number two: %v\n", c.NumberTwo)
+	fmt.Printf("First Number: %v\n", c.firstNumber)
+	fmt.Printf("Second Number: %v\n", c.secondNumber)
 }
