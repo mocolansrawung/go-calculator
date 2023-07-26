@@ -1,6 +1,8 @@
 package model
 
-import "fmt"
+import (
+	"fmt"
+)
 
 type Calculator struct {
 	NumberOne int
@@ -16,6 +18,18 @@ func (c *Calculator) Subtract() int {
 }
 func (c *Calculator) Addition() int {
 	return c.NumberOne + c.NumberTwo
+}
+
+func (c *Calculator) Divide() float64 {
+	result := float64(c.NumberOne) / float64(c.NumberTwo)
+	formattedResult := fmt.Sprintf("%.2f", result)
+
+	var roundedResult float64
+    _, err := fmt.Sscanf(formattedResult, "%f", &roundedResult)
+    if err != nil {
+        fmt.Println(err)
+    }
+	return roundedResult
 }
 
 func (c *Calculator) PrintInfo() {
