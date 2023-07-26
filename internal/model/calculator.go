@@ -29,7 +29,12 @@ func (c *Calculator) Divide() float64 {
     if err != nil {
         fmt.Println(err)
     }
-	return roundedResult
+	return roundedResult  
+}
+
+
+func (c *Calculator) Multiply() int {
+	return c.NumberOne + c.NumberTwo
 }
 
 func (c *Calculator) PrintInfo() {
