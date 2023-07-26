@@ -6,7 +6,7 @@ import (
 )
 
 func main() {
-	calc := model.Calculator{NumberOne: 1, NumberTwo: 3}
+	calc := model.NewCalculator(1, 3)
 	fmt.Println(calc.Subtract())
 
 }
